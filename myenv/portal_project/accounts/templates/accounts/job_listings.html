@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .job-listings {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .job-listings h2 {
+            margin: 0;
+        }
+        .job-listings p{
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Job Listings</h1>
+    <ul>
+        {% for job in jobs %}
+        <div class="job-listings">
+            <h2>{{ job.title }}</h2>
+            <p><strong>Company:</strong> {{ job.Company.name }}</p>
+            <p><strong>Location:</strong> {{ job.location }}</p>
+            <p><strong> Description:</strong> {{ job.description }}</p>
+            <p><strong>Posted by:</strong> {{ job.posted_by.username }}</p>
+            <p><strong>Posted at:</strong> {{ job.posted_at }}</p>
+
+        </div>
+           
+        {% endfor %}
+    </ul>
+</body>
+</html>
