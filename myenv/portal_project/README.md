@@ -97,4 +97,5 @@ This is a web application built with Django.it is designed to serve a job portal
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin feature/your-feature`)
 5. Create a new Pull Request
-
+### pitch dech link
+<a href="https://app.slidebean.com/editor/qjfiuyyjsc#design4">PITCH DECK on the above project.<a/>
